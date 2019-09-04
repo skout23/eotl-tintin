@@ -1,6 +1,20 @@
 # eotl-tintin
 some of my tintin related stuff... YMMV
-### the mapper
+
+## useful links
+- http://www.eotl.org
+- http://eotl.borkweb.com
+- http://eotl.pbworks.com
+- http://www.bogleg.com/eotl
+
+
+## the tintin scripts
+- more to come once I classify and cleanup.
+```
+tt++ startmud.tin
+```
+
+## the mapper
 - Load the map:
 ```
 #map read eotl.map
