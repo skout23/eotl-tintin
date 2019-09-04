@@ -8,6 +8,7 @@ some of my tintin related stuff... YMMV
 - http://www.bogleg.com/eotl
 
 ## useful tintin++ links
+- https://github.com/borkweb/tintin-eotl
 - https://tintinplusplus-unoffical-documentation.readthedocs.io/en/latest/contents/features/mapper/01_getting-started.html
 - https://tintin.sourceforge.io/manual/map.php
 - https://tintin.sourceforge.io/forum/
