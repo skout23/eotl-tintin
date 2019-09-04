@@ -1,12 +1,16 @@
 # eotl-tintin
 some of my tintin related stuff... YMMV
 
-## useful links
+## useful EoTL links
 - http://www.eotl.org
 - http://eotl.borkweb.com
 - http://eotl.pbworks.com
 - http://www.bogleg.com/eotl
 
+## useful tintin++ links
+- https://tintinplusplus-unoffical-documentation.readthedocs.io/en/latest/contents/features/mapper/01_getting-started.html
+- https://tintin.sourceforge.io/manual/map.php
+- https://tintin.sourceforge.io/forum/
 
 ## the tintin scripts
 - more to come once I classify and cleanup.
@@ -15,6 +19,11 @@ tt++ startmud.tin
 ```
 
 ## the mapper
+```
+#help map
+#map help
+```
+
 ### known issues
 - any moving or variable entrance/exit. (the door, truck, horse, nexus, etc etc)
 
