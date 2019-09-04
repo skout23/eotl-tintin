@@ -15,6 +15,11 @@ tt++ startmud.tin
 ```
 
 ## the mapper
+### known issues
+- any moving or variable entrance/exit. (the door, truck, horse, nexus, etc etc)
+
+### using the map
+
 - Load the map:
 ```
 #map read eotl.map
