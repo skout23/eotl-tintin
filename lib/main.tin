@@ -2,5 +2,6 @@
 #class main open
 
 #READ {$dir/lib/guilds.tin}
+#READ {$dir/lib/movement.tin}
 
 #class main close

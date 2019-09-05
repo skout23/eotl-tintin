@@ -1,0 +1,542 @@
+#class MovementClass kill
+#class MovementClass open
+
+#SHOWME {Loading Map run aliases...}
+#ALIAS {6hex}
+{
+	#map run {Sixth Hextant}
+}
+{5}
+
+#ALIAS {7hex}
+{
+	#map run {Seventh Hextant}
+}
+{5}
+
+#ALIAS {aliceg}
+{
+	#map run {Alice's Gazebo}
+}
+{5}
+
+#ALIAS {ar}
+{
+	admire rose
+}
+{5}
+
+#ALIAS {arges1}
+{
+	#map run {A Glowing Crystal Cave Elekmuth Lizard}
+}
+{5}
+
+#ALIAS {arges2}
+{
+	#map run {Chunky Passage -- End Rock Worm Tooth search heap}
+}
+{5}
+
+#ALIAS {arges3}
+{
+	#map run {Sewer Drainage Tunnel -- Fork}
+}
+{5}
+
+#ALIAS {arges4}
+{
+	#map run {Snook's Underworld Shop};
+	give ruby to snook
+}
+{5}
+
+#ALIAS {arges5}
+{
+	#map run {The Cave of Yrd}
+}
+{5}
+
+#ALIAS {arges6}
+{
+	#map leave;
+	u;
+	w;
+	w;
+	w;
+	push wall;
+	n;
+	n;
+	n;
+	w;
+	u;
+	s;
+	s;
+	w;
+	w;
+	w;
+	w;
+	s;
+	s;
+	s;
+	s;
+	s;
+	push wall;
+	w;
+	n;
+	pull lever;
+	s;
+	e;
+	e;
+	d;
+	w;
+	n
+}
+{5}
+
+#ALIAS {atm}
+{
+	#map run {Atlas Mountains}
+}
+{5}
+
+#ALIAS {aydi}
+{
+	#map run {Inn of Aydindril}
+}
+{5}
+
+#ALIAS {aydi2}
+{
+	#map run {Inn of Aydindril}
+}
+{5}
+
+#ALIAS {bardg}
+{
+	#map run {Musical Note Inn}
+}
+{5}
+
+#ALIAS {bobsh}
+{
+	#map run {Bob General Store}
+}
+{5}
+
+#ALIAS {bongw}
+{
+	#map run {The Bong Water Tavern & Inn}
+}
+{5}
+
+#ALIAS {brins}
+{
+	#map run {Brin's Bed and Breakfast}
+}
+{5}
+
+#ALIAS {bugs}
+{
+	#map run {A Small Nook Bugs}
+}
+{5}
+
+#ALIAS {caste}
+{
+	#map run {Caster Elevator}
+}
+{5}
+
+#ALIAS {castg}
+{
+	#map run {Caster Waiting Room}
+}
+{5}
+
+#ALIAS {cita}
+{
+	#map run {The Citadel Portcullis}
+}
+{5}
+
+#ALIAS {citab}
+{
+	#map run {Cita Barracks}
+}
+{5}
+
+#ALIAS {clericg}
+{
+	#map run {Cleric's Altar}
+}
+{5}
+
+#ALIAS {common}
+{
+	#map run {The Common Room}
+}
+{5}
+
+#ALIAS {cshop}
+{
+	#map run {Magic Shop}
+}
+{5}
+
+#ALIAS {cstor}
+{
+	#map run {Crimson City General Store}
+}
+{5}
+
+#ALIAS {ctower}
+{
+	#map run {High Clerist's Tower}
+}
+{5}
+
+#ALIAS {dark1}
+{
+	#map run {Dark Ones Ominous Path}
+}
+{5}
+
+#ALIAS {dballz}
+{
+	#map run {The Careening Drunkard}
+}
+{5}
+
+#ALIAS {dbeers}
+{
+	#map run {Beer Tent of Solace}
+}
+{5}
+
+#ALIAS {deansh}
+{
+	#map run {Dean's Armor Shop}
+}
+{5}
+
+#ALIAS {deathc}
+{
+	#map run {Death Chat Ocean Shore}
+}
+{5}
+
+#ALIAS {ecbnb}
+{
+	#map run BNB
+}
+{5}
+
+#ALIAS {elfdsd}
+{
+	#map run {A Dark Alley Dull Steel Dagger}
+}
+{5}
+
+#ALIAS {elfmines}
+{
+	#map run {Entrance to the Mines}
+}
+{5}
+
+#ALIAS {fball}
+{
+	#map run {A Commentator's Booth}
+}
+{5}
+
+#ALIAS {fightg}
+{
+	#map run {Bwern}
+}
+{5}
+
+#ALIAS {fish1}
+{
+	#map run {Matsu's Shop}
+}
+{5}
+
+#ALIAS {forg}
+{
+	#map run {Forester Shrine}
+}
+{5}
+
+#ALIAS {gmatrix}
+{
+	#map run {Dozer}
+}
+{5}
+
+#ALIAS {gotik}
+{
+	#map run {Solace Lockers}
+}
+{5}
+
+#ALIAS {gryphs}
+{
+	#map run {Atlas Mountains}
+}
+{5}
+
+#ALIAS {gvv}
+{
+	#map run {Surgical Laboratory 9}
+}
+{5}
+
+#ALIAS {harst}
+{
+	#map run {Harolds General Store}
+}
+{5}
+
+#ALIAS {headg}
+{
+	#map run {The Mud Plain}
+}
+{5}
+
+#ALIAS {headpit}
+{
+	#map run {Central Firepit}
+}
+{5}
+
+#ALIAS {hillg}
+{
+	#map run {Hill Giant Cave Entrance}
+}
+{5}
+
+#ALIAS {illug1}
+{
+	#map run {A Wood Paneled Room After Fall}
+}
+{5}
+
+#ALIAS {illug2}
+{
+	#map run {A Large Chamber Walled in Mirrors}
+}
+{5}
+
+#ALIAS {javi}
+{
+	#map run {Javiers Workroom}
+}
+{5}
+
+#ALIAS {kais}
+{
+	#map run {The Great Kai}
+}
+{5}
+
+#ALIAS {monks}
+{
+	#map run {Four Monks Skarl Quarters}
+}
+{5}
+
+#ALIAS {mooch}
+{
+	#map run {Moochie Wheedlebargain's Used Antiques and Collectibles}
+}
+{5}
+
+#ALIAS {nbouncer}
+{
+	#map run {Namek Bouncer}
+}
+{5}
+
+#ALIAS {necrog}
+{
+	#map run {Necromancers Guild}
+}
+{5}
+
+#ALIAS {nhlock}
+{
+	#map run {NHLockers}
+}
+{5}
+
+#ALIAS {noskills}
+{
+	#map run {Garet Training Center}
+}
+{5}
+
+#ALIAS {nshop}
+{
+	#map run {A Simple Namek Shop}
+}
+{5}
+
+#ALIAS {ntower}
+{
+	#map run {Namekian Training Tower}
+}
+{5}
+
+#ALIAS {orc}
+{
+	#map run {Oracle}
+}
+{5}
+
+#ALIAS {otik}
+{
+	#map run {Solace Lockers}
+}
+{5}
+
+#ALIAS {padag}
+{
+	#map run {Main Hall, Academy of the Gifted}
+}
+{5}
+
+#ALIAS {pies}
+{
+	#map run {Finkelmeyer's pie shop}
+}
+{5}
+
+#ALIAS {pring}
+{
+	#map run {Outside a Large Purple Door}
+}
+{5}
+
+#ALIAS {r1}
+{
+	#map run 1
+}
+{5}
+
+#ALIAS {redg}
+{
+	#map run {Mastiff}
+}
+{5}
+
+#ALIAS {rogs}
+{
+	#map run {Rogue Camp}
+}
+{5}
+
+#ALIAS {ruin2}
+{
+	#map run {Road to Ruin}
+}
+{5}
+
+#ALIAS {runieg}
+{
+	#map run {Runesmiths Guild}
+}
+{5}
+
+#ALIAS {sams}
+{
+	#map run {Outside Sams}
+}
+{5}
+
+#ALIAS {sithg}
+{
+	#map run {Before the Entrance to a Dark Cave}
+}
+{5}
+
+#ALIAS {slayg}
+{
+	#map run {MageSlayers Guild}
+}
+{5}
+
+#ALIAS {slimes}
+{
+	#map run {Slimy Road}
+}
+{5}
+
+#ALIAS {snak2}
+{
+	#map run {Snak-O-Rama}
+}
+{5}
+
+#ALIAS {stuffinc}
+{
+	#map run {Stuff Outlet}
+}
+{5}
+
+#ALIAS {swordg}
+{
+	#map run {The Captain's Cabin}
+}
+{5}
+
+#ALIAS {toh}
+{
+	#map run {Temple of Healing}
+}
+{5}
+
+#ALIAS {trek}
+{
+	#map run {Star Trek Transporter Room}
+}
+{5}
+
+#ALIAS {ttr}
+{
+	#map run {The Throne Room}
+}
+{5}
+
+#ALIAS {warg}
+{
+	#map run {Hermes}
+}
+{5}
+
+#ALIAS {xmeni}
+{
+	#map run {Xmen Intermediate Room}
+}
+{5}
+
+#ALIAS {xmsh}
+{
+	#map run {Xmen Multipurpose Shop}
+}
+{5}
+
+#ALIAS {ylock}
+{
+	#map run {Yxuxacta Long Term Storage}
+}
+{5}
+
+#ALIAS {zerkg}
+{
+	#map run {Berserkers}
+}
+{5}
+
+
+#class MovementClass close
