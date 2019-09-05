@@ -12,4 +12,7 @@
 #READ {$dir/config/variables.tin}
 #READ {$dir/lib/main.tin}
 
+
+#split
+
 #SESSION {eotl} {eotl.org} {2010}:

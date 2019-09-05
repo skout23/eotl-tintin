@@ -19,9 +19,9 @@
         #SHOWME $PLAYER[SPEC];
     };
 
-    #SHOWME {Loading $PLAYER[GUILD] ....};
+    #SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
     #READ {$dir/lib/guilds/$PLAYER[GUILD].tin};
-    #SHOWME {Loading $PLAYER[SPEC] ....};
+    #SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
     #READ {$dir/lib/specs/$PLAYER[SPEC].tin};
 
 };
