@@ -12,7 +12,8 @@
 #READ {$dir/config/variables.tin}
 #READ {$dir/lib/main.tin}
 
-
 #split
+
+#ACTION {Last logon: } {#delay {2} {check_guild}}
 
 #SESSION {eotl} {eotl.org} {2010}:
