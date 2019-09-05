@@ -2,6 +2,22 @@
 #class MovementClass open
 
 #SHOWME {Loading Map run aliases...}
+
+#PATHDIR          {d}  {u}  {32}
+#PATHDIR          {e}  {w}  {2}
+#PATHDIR          {n}  {s}  {1}
+#PATHDIR          {ne}  {sw}  {3}
+#PATHDIR          {northeast}  {southwest}  {0}
+#PATHDIR          {northwest}  {southeast}  {0}
+#PATHDIR          {nw}  {se}  {9}
+#PATHDIR          {s}  {n}  {4}
+#PATHDIR          {se}  {nw}  {6}
+#PATHDIR          {southeast}  {northwest}  {0}
+#PATHDIR          {southwest}  {northeast}  {0}
+#PATHDIR          {sw}  {ne}  {12}
+#PATHDIR          {u}  {d}  {16}
+#PATHDIR          {w}  {e}  {8}
+
 #ALIAS {6hex}
 {
 	#map run {Sixth Hextant}
