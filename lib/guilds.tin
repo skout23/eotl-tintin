@@ -3,9 +3,12 @@
 
 #action {Guild: %0} {#var RAW_TOON_GUILD {%0};#format TOON_GUILD {%p} {$RAW_TOON_GUILD};#var {PLAYER[GUILD]} {$TOON_GUILD}};
 #action {Spec: %0} {#var RAW_TOON_SPEC {%0};#format TOON_SPEC {%p} {$RAW_TOON_SPEC};#var {PLAYER[SPEC]} {$TOON_SPEC}};
+#ACTION {Last logon: } {#SHOWME {Wating a few seconds to load Guild and Spec settings...};#DELAY {3} {check_guild}}
 
 #alias check_guild
 {
+    
+    score;
     #DELAY {2} {
         score;
         #SHOWME {After the Score... here we go};
@@ -16,8 +19,6 @@
         #READ {$dir/lib/specs/$PLAYER[SPEC].tin};
     };
 };
-
-score;
 
 #class GuildsClass close
 
