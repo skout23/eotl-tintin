@@ -6,7 +6,9 @@
 
 #alias check_guild
 {
+    score;
     #SHOWME {Waiting...};
+    score;
     #DELAY {2} {
         score;
         #SHOWME {After the Score... here we go};
