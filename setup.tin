@@ -1,0 +1,20 @@
+#VARIABLE {dir} {.};
+#CONFIG {LOG} {RAW}
+#LOG APPEND {$dir/log/active.log}
+
+
+#EVENT {SESSION CONNECTED}
+{
+  #VAR {session[name]} {%0};
+  #SHOWME {About to check guild and spec };
+  #DELAY 2
+  {
+      check_guild;
+  }
+};
+
+
+#READ {$dir/config/variables.tin}
+#READ {$dir/lib/main.tin}
+
+#SESSION {eotl} {eotl.org} {2010}:

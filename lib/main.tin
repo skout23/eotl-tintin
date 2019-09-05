@@ -1,0 +1,6 @@
+#class main kill
+#class main open
+
+#READ {$dir/lib/guilds.tin}
+
+#class main close

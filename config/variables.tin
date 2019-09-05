@@ -1,0 +1,6 @@
+#class {variables} kill
+#class {variables} open
+
+#VAR {PLAYER} 0;
+
+#class {variables} close

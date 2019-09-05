@@ -1,0 +1,30 @@
+#class GuildsClass kill
+#class GuildsClass open
+
+#alias check_guild
+{
+    #SHOWME {Checking Guild and Spec.....};
+    #action {Guild: %0} 
+    {
+        #var RAW_TOON_GUILD {%0};
+        #format TOON_GUILD {%p} {$RAW_TOON_GUILD};
+        #var {PLAYER[GUILD]} {$TOON_GUILD};
+    };
+
+    #action {Spec: %0} 
+    {
+        #var RAW_TOON_SPEC {%0};
+        #format TOON_SPEC {%p} {$RAW_TOON_SPEC};
+        #var {PLAYER[SPEC]} {$TOON_SPEC};
+        #SHOWME $PLAYER[SPEC];
+    };
+
+    #SHOWME {Loading $PLAYER[GUILD] ....};
+    #READ {$dir/lib/guilds/$PLAYER[GUILD].tin};
+    #SHOWME {Loading $PLAYER[SPEC] ....};
+    #READ {$dir/lib/specs/$PLAYER[SPEC].tin};
+
+}
+
+#class GuildsClass close
+
