@@ -7,7 +7,7 @@
 #alias check_guild
 {
     #SHOWME {Checking Guild .....};
-    #DELAY {2} {score};
+    score;
     #SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
     #READ {$dir/lib/guilds/$PLAYER[GUILD].tin};
     #SHOWME {Checking Spec .....};
