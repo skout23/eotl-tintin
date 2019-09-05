@@ -1,4 +1,6 @@
 #class FighterGuild kill
 #class FighterGuild open
 
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
 #class FighterGuild close

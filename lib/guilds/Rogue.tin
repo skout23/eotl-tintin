@@ -1,4 +1,6 @@
 #class RogueGuild kill
 #class RogueGuild open
 
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
 #class RogueGuild close

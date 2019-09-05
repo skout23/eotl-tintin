@@ -1,4 +1,6 @@
 #class NoneGuild kill
 #class NoneGuild open
 
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
 #class NoneGuild close

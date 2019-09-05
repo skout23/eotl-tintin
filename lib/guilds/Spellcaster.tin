@@ -1,4 +1,6 @@
 #class SpellcasterGuild kill
 #class SpellcasterGuild open
 
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
 #class SpellcasterGuild close

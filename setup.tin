@@ -8,12 +8,11 @@
   #VAR {session[name]} {%0};
 };
 
-
 #READ {$dir/config/variables.tin}
 #READ {$dir/lib/main.tin}
 
 #split
 
-#ACTION {Last logon: } {#DELAY {1} {score};#DELAY {1} {check_guild}}
+#ACTION {Last logon: } {#DELAY {2} {check_guild}}
 
 #SESSION {eotl} {eotl.org} {2010}:
