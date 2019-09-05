@@ -16,7 +16,7 @@ some of my tintin related stuff... YMMV
 ## the tintin scripts
 - more to come once I classify and cleanup.
 ```
-tt++ startmud.tin
+tt++ setup.tin
 ```
 
 ## the mapper
@@ -32,7 +32,7 @@ tt++ startmud.tin
 
 - Load the map:
 ```
-#map read eotl.map
+#map read $dir/maps/eotl.map
 ```
 
 - Start the map in the correct room e.g. the "Lounge":
@@ -52,4 +52,10 @@ tt++ startmud.tin
 OR
 ```
 #map run {Lounge}
+```
+
+### checkout all the mapped runs
+```
+#alias
+#grep run
 ```
