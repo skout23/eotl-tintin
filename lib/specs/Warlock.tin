@@ -22,10 +22,9 @@
 }
 {5}
 
-
 #ALIAS {pm}
 {
-	cast powerball $current_target}
+	cast powerball $current_target
 }
 {5}
 
