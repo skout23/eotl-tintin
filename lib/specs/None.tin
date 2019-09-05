@@ -1,4 +1,6 @@
 #class NoneSpec kill
 #class NoneSpec open
 
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
 #class NoneSpec close

@@ -1,4 +1,6 @@
 #class NecromancerSpec kill
 #class NecromancerSpec open
 
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
 #class NecromancerSpec close

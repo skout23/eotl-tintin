@@ -1,4 +1,6 @@
 #class WarlockSpec kill
 #class WarlockSpec open
 
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
 #class WarlockSpec close
