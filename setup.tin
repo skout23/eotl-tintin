@@ -14,6 +14,6 @@
 
 #split
 
-#ACTION {Last logon: } {check_guild}
+#ACTION {Last logon: } {#DELAY {4} {check_guild}}
 
 #SESSION {eotl} {eotl.org} {2010}:
