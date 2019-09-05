@@ -18,6 +18,11 @@
 #PATHDIR          {u}  {d}  {16}
 #PATHDIR          {w}  {e}  {8}
 
+#ALIAS {mm}
+{
+	#map map
+}
+
 #ALIAS {6hex}
 {
 	#map run {Sixth Hextant}
