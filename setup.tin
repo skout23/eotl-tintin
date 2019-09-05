@@ -13,6 +13,7 @@
 
 #split
 
-#ACTION {Last logon: } {#DELAY {2} {check_guild}}
+#SHOWME {Wating a few seconds to load Guild and Spec settings...}
+#ACTION {Last logon: } {#DELAY {4} {check_guild}}
 
 #SESSION {eotl} {eotl.org} {2010}:
