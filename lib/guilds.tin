@@ -7,13 +7,15 @@
 #alias check_guild
 {
     #SHOWME {Waiting...};
-    #DELAY {2} {score};
-    #SHOWME {After the Score... here we go};
-    #SHOWME {Checking Guild $PLAYER[GUILD].....};
-    #READ {$dir/lib/guilds/$PLAYER[GUILD].tin};
-    #SHOWME {Checking Spec .....};
-    #SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
-    #READ {$dir/lib/specs/$PLAYER[SPEC].tin};
+    #DELAY {2} {
+        score;
+        #SHOWME {After the Score... here we go};
+        #SHOWME {Checking Guild $PLAYER[GUILD].....};
+        #READ {$dir/lib/guilds/$PLAYER[GUILD].tin};
+        #SHOWME {Checking Spec .....};
+        #SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+        #READ {$dir/lib/specs/$PLAYER[SPEC].tin};
+    };
 };
 
 #class GuildsClass close
