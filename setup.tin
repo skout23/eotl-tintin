@@ -6,11 +6,6 @@
 #EVENT {SESSION CONNECTED}
 {
   #VAR {session[name]} {%0};
-  #SHOWME {About to check guild and spec };
-  #DELAY 2
-  {
-      check_guild;
-  }
 };
 
 

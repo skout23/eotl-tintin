@@ -24,7 +24,8 @@
     #SHOWME {Loading $PLAYER[SPEC] ....};
     #READ {$dir/lib/specs/$PLAYER[SPEC].tin};
 
-}
+};
+
 
 #class GuildsClass close
 
