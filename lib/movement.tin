@@ -18,10 +18,96 @@
 #PATHDIR          {u}  {d}  {16}
 #PATHDIR          {w}  {e}  {8}
 
+#ALIAS {bmu}
+{
+	beam me up
+}
+{5}
+
+#ALIAS {pd}
+{
+	peer down
+}
+{5}
+
+#ALIAS {pe}
+{
+	peer east
+}
+{5}
+
+#ALIAS {pn}
+{
+	peer north
+}
+{5}
+
+#ALIAS {pne}
+{
+	peer northeast
+}
+{5}
+
+#ALIAS {pnw}
+{
+	peer northwest
+}
+{5}
+
+#ALIAS {ps}
+{
+	peer south
+}
+{5}
+
+#ALIAS {pse}
+{
+	peer southeast
+}
+{5}
+
+#ALIAS {psw}
+{
+	peer southwest
+}
+{5}
+
+#ALIAS {pu}
+{
+	peer up
+}
+{5}
+
+#ALIAS {pw}
+{
+	peer west
+}
+{5}
+
+
+#ALIAS {mfs}
+{
+	#map flag static on
+}
+{5}
+
+#ALIAS {mi}
+{
+	#map info
+}
+{5}
+
 #ALIAS {mm}
 {
 	#map map
 }
+{5}
+
+#ALIAS {od}
+{
+	open door
+}
+{5}
 
 #ALIAS {6hex}
 {

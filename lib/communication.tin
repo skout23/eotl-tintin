@@ -1,0 +1,58 @@
+#class CommunicationClass kill
+#class CommunicationClass open
+
+#ALIAS {gem}
+{
+	group emote
+}
+{5}
+
+#ALIAS {gh}
+{
+	group status
+}
+{5}
+
+#ALIAS {ce}
+{
+	cant emote
+}
+{5}
+
+#ALIAS {sce}
+{
+	scant emote
+}
+{5}
+
+#ALIAS {ww}
+{
+	cant /who
+}
+{5}
+
+#ALIAS {soa}
+{
+	who -ps eval -fi:600
+}
+{5}
+
+#ALIAS {sor}
+{
+	who -pms eval -fi:600
+}
+{5}
+
+#ALIAS {auc}
+{
+	auction
+}
+{5}
+
+#ALIAS {[[}
+{
+	who -i
+}
+{5}
+
+#class CommunicationClass close

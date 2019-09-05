@@ -3,4 +3,70 @@
 
 #SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
 
+#ALIAS {rean}
+{
+	cast reanimate body
+}
+{5}
+
+#ALIAS {emp}
+{
+	cast empower undead
+}
+{5}
+
+#ALIAS {vm}
+{
+	cast vampiric touch
+}
+{5}
+
+#ALIAS {fes}
+{
+	cast fester
+}
+{5}
+
+#ALIAS {vc}
+{
+	vivisect corpse
+}
+{5}
+
+#ALIAS {coa}
+{
+	cast cloak of awakening
+}
+{5}
+
+#ALIAS {cv}
+{
+	cast vampiric touch
+}
+{5}
+
+#ALIAS {ok}
+{
+	order risen kill
+}
+{5}
+
+#ALIAS {or}
+{
+	order risen
+}
+{5}
+
+#ALIAS {bz}
+{
+	Bag zombie
+}
+{5}
+
+#ALIAS {eb}
+{
+	Empty bag
+}
+{5}
+
 #class NecromancerSpec close

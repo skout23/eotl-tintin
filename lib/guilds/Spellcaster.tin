@@ -3,4 +3,41 @@
 
 #SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
 
+#VAR current_target monster;
+
+#ALIAS {tt} 
+{
+    #VAR current_target %1
+}
+
+#ALIAS {cm}
+{
+	cast magic missile $current_target
+}
+{5}
+
+#ALIAS {fam}
+{
+	cast familiar
+}
+{5}
+
+#ALIAS {rfam}
+{
+	relieve familiar
+}
+{5}
+
+#ALIAS {hh}
+{
+	cast alter location
+}
+{5}
+
+#ALIAS {shh}
+{
+	select nice place %1
+}
+{5}
+
 #class SpellcasterGuild close

@@ -1,0 +1,158 @@
+#class CommonClass kill
+#class CommonClass open
+
+#ALIAS {buys}
+{
+	buy guide;
+	glow on;
+	buy rtimer;
+	buy calculator;
+	buy chat;
+	buy contacts
+}
+{5}
+
+#ALIAS {re}
+{
+	retrieve
+}
+{5}
+
+#ALIAS {cl}
+{
+	cleanup
+}
+{5}
+
+#ALIAS {ga}
+{
+	get all
+}
+{5}
+
+#ALIAS {sa}
+{
+	sell all
+}
+{5}
+
+#ALIAS {gac}
+{
+	get all from corpse
+}
+{5}
+
+#ALIAS {gc}
+{
+	get coins
+}
+{5}
+
+
+
+#ALIAS {id}
+{
+	identify
+}
+{5}
+
+#ALIAS {lc}
+{
+	look corpse
+}
+{5}
+
+#ALIAS {lm}
+{
+	look monster
+}
+{5}
+
+
+#ALIAS {lpk}
+{
+	look monument
+}
+{5}
+
+#NOP
+#NOP  Check out our skills and profs
+#NOP 
+
+#ALIAS {lp}
+{
+	list proficiencies
+}
+{5}
+
+#ALIAS {lr}
+{
+	list resistances
+}
+{5}
+
+#ALIAS {ls}
+{
+	list skills
+}
+{5}
+
+#NOP 
+#NOP  KILLING STUFF 
+#NOP
+
+#ALIAS {ka}
+{
+	kill all
+}
+{5}
+
+#ALIAS {kh}
+{
+	kill human
+}
+{5}
+
+#ALIAS {km}
+{
+	kill monster
+}
+{5}
+
+#ALIAS {con}
+{
+	condition all
+}
+{5}
+
+#ALIAS {ca}
+{
+	consider all
+}
+{5}
+
+#ALIAS {dc}
+{
+	Dest corpse
+}
+{5}
+
+#ALIAS {da}
+{
+	Dest all corpse
+}
+{5}
+
+#ALIAS {z}
+{
+	cleanup
+}
+{5}
+
+#ALIAS {pc}
+{
+	put coins in pack
+}
+{5}
+
+#class CommonClass close

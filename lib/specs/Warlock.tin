@@ -3,4 +3,36 @@
 
 #SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
 
+
+#ALIAS {bg}
+{
+	cast burning grasp
+}
+{5}
+
+#ALIAS {cf}
+{
+	cast fireball
+}
+{5}
+
+#ALIAS {co}
+{
+	cast combine %1
+}
+{5}
+
+
+#ALIAS {pm}
+{
+	cast powerball $current_target}
+}
+{5}
+
+#ALIAS {pow}
+{
+	cast power of war
+}
+{5}
+
 #class WarlockSpec close
