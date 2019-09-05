@@ -12,7 +12,7 @@
         #SHOWME {After the Score... here we go};
         #SHOWME {Checking Guild $PLAYER[GUILD].....};
         #READ {$dir/lib/guilds/$PLAYER[GUILD].tin};
-        #SHOWME {Checking Spec .....};
+        #SHOWME {Checking Spec $PLAYER[SPEC].....};
         #READ {$dir/lib/specs/$PLAYER[SPEC].tin};
     };
 };
