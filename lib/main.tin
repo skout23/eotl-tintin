@@ -6,5 +6,7 @@
 #READ {$dir/lib/movement.tin}
 #READ {$dir/lib/communication.tin}
 #READ {$dir/lib/health.tin}
+#READ {$dir/lib/private/stuff.tin}
+
 
 #class main close

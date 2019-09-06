@@ -3,12 +3,58 @@
 
 #SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
 
+/*
+- Spec Skills -
+magic missile:			PUBLIC GUILD directed damage single target
+mass fireball:			room wide AOE fire damage 
+powerball:				massive directed damage single target
+combine:				loan all your stats to some other Warlock...what could go wrong? :) 
+firestorm:				room wide AOE continuous damage 
+power of war:			buff your warlock skills while in combat
+pyro shield:			deals damage to those that attack you
+pyro strike:			adds extra fire damage to your melee attacks
+ride the lightning:		massive directed damage single target, will follow target if they move
+ball lightning:			massive directed damage single target
+battle frenzy:			make a target go mad and attack EVERYTHING!
+burning grasp:			reach out and touch someone... amd make them regret it
+ignite:					reach out and burn something... that you are holding
 
-#ALIAS {bg}
-{
-	cast burning grasp
-}
-{5}
+- Proficiencies - 
+knife
+wand
+staff
+
+*/
+
+#NOP  ######################################;
+#NOP  #########    Targetting    ###########;
+#NOP  #####  Enherited from Guild   ########;
+#NOP  ######################################;
+
+#NOP #VAR current_target monster;
+
+#NOP  ######################################;
+#NOP  #########   Mass Fireball  ###########;
+#NOP  ######################################;
+/*
+Name  : Fireball
+Cost  : 50 Mana
+Type  : Combat
+Usage : cast fireball
+Requirements : 40 in Intelligence
+               15 in Magic Missile
+               15 in Spell Casting
+               15 in Drazk
+
+One of the most spectacular displays of power known, a Warlock's fireball
+spreads throughout the room burning all not allied with the caster.  Long
+ago, we Warlocks had more precise control over our flame attacks, but after
+the sundering we discovered the power within large-scale attacks such as the
+fireball we now control.  
+
+This spell's casting time varies depending upon the caster's skill in 'mass
+fireball' and is not consistent even for someone at the same skill level.
+*/
 
 #ALIAS {cf}
 {
@@ -16,11 +62,46 @@
 }
 {5}
 
-#ALIAS {co}
+
+#NOP  ######################################;
+#NOP  ##########    Firestorm   ############;
+#NOP  ######################################;
+/*
+Name  : Firestorm
+Cost  : 200 Mana
+Type  : Combat
+Usage : cast firestorm
+Requirements : 150 Int, 30 Mass Fireball, 30 Spell Casting, 20 Drazk
+
+Another spectacular pyrotechnic display of the Warlocks, the Firestorm is a
+powerful incantation.  Only mastered by the greatest War mages, this spell
+rains down fiery death to the enemies of the Warlock. Though the fleet of
+foot may dodge the fiery death long enough to escape, most are not that
+swift.  The fire rains down for as long as the Warlock remains in control of
+it, and then gradually dissipates.
+*/
+
+#ALIAS {cfs}
 {
-	cast combine %1
+	cast firestorm
 }
 {5}
+
+#NOP  ######################################;
+#NOP  ########   Powereball     ############;
+#NOP  ######################################;
+/*
+Name  : Powerball
+Cost  : 60 Mana
+Type  : Combat
+Usage : cast powerball [ target ]
+Requirements : 60 Int, 18 Fireball, 18 Spell Casting, 15 Drazk
+
+One of the most destructive spells known, Powerball has sent many a warrior
+to his demise.  A long and involved spell, it is not to be cast in haste, but
+melting your opponent from the inside out is a sure way to cause some chaos
+and destruction.
+*/
 
 #ALIAS {pm}
 {
@@ -28,9 +109,219 @@
 }
 {5}
 
+#NOP  ######################################;
+#NOP  #######   Ball Lightning    ##########;
+#NOP  ######################################;
+/*
+Name  : Ball Lightning
+Cost  : 50 Mana
+Type  : Combat
+Usage : cast ball lightning [ target ]
+Requirements : 100 Int, 27 Powerball, 28 Spell Casting, 20 Drazk
+
+Ball lightning is one of the odder sorceries controlled by the Warlock cult. 
+While not as damaging as some of the Warlock's other spells, it has the
+amazing ability to chase down those who have fled from the casting.  The
+lightning ball will only travel in roughly a straight line, but can still
+frequently find its target.
+*/
+
+#ALIAS {bl}
+{
+	cast ball lightning $current_target
+}
+{5}
+
+#NOP  ######################################;
+#NOP  #####   Ride the Lightning   #########;
+#NOP  ######################################;
+/*
+Name  : Ride the Lightning
+Cost  : None
+Type  : Movement
+Usage : ride the lightning / Automatic
+Requirements : 200 Int, 30 Ball Lightning, 40 Spell Casting, 20 Drazk
+
+With the balls of lightning Warlocks let free to chase down their enemies,
+sometimes a Warlock wishes to follow along. With this skill, a Warlock can
+attempt to ride the Ball Lightning elementals to their destination and then
+engage their foe.
+
+To prepare, you must 'ride the lightning' and then when you next summon a
+Ball Lightning, you will be carried along if it finds a target.
+*/
+
+#ALIAS {rbl}
+{
+	ride the lightning;
+	#delay {1} {bl}
+}
+{5}
+
+#NOP  ######################################;
+#NOP  #######    Burning Grasp    ##########;
+#NOP  ######################################;
+/*
+Name  : Burning Grasp
+Cost  : 10 Mana + 5 per every 10 levels of Burning Grasp
+Type  : Combat
+Usage : cast burning grasp [ target ]
+Requirements : 20 in Intelligence
+                8 in Spell Casting
+                5 in Ignite
+                5 in Drazk
+
+One of the first fire-based skills a Warlock learns, Burning Grasp teaches
+the consumptive powers of fire. This spell will let the Warlock spread liquid
+flame with a touch of the hand. The flames will ignite the opponent and
+continually burn them. The higher the skill level, the longer and hotter the
+flames will burn, and for each time Burning Grasp is cast on a victim, the
+hotter still the flames will burn.
+*/
+
+#ALIAS {bg}
+{
+	cast burning grasp $current_target
+}
+{5}
+
+#NOP  ######################################;
+#NOP  #######   Warlock Combine   ##########;
+#NOP  ######################################;
+/*
+Name  : Warlock Combine
+Cost  : All Mana ( Must be full )
+Type  : Enchantment
+Usage : cast combine [ target ]
+Requirements : 25 Int, 10 Spell Casting, 10 Silvari, 5 Combine
+
+The greatest of magics can only be accomplished by working together. The
+Warlocks have a powerful way of creating great works of magic. By combining
+their powers into one,the leader of the ritual can cast magics of
+unbelievable potence.
+*/
+
+#ALIAS {co}
+{
+	cast combine %1
+}
+{5}
+
+#NOP  ######################################;
+#NOP  #######   Battle Frenzy    ###########;
+#NOP  ######################################;
+/*
+Spell : Battle Frenzy
+Cost  : 100 Mana
+Type  : Enchantment
+Usage : cast battle frenzy [ target ]
+Requirements : 70 Int, 20 Spell Casting,20 Drazk
+
+The clash of arms.  The screams of dying men.  The stink of death.  These are
+what brings us power, these are what we thrive on.  Just as we can channel
+the power of war into magical might, so too can we focus the battle onto a
+person and through a person so that it manifests as itself.  The target is
+consumed with a blind rage and a desire to slay until slain or until they
+collapse from exhaustion.
+*/
+
+#ALIAS {bf}
+{
+	cast battle frenzy %1
+}
+{5}
+
+#NOP  ######################################;
+#NOP  #######    Power of War    ###########;
+#NOP  ######################################;
+/*
+Name  : Power of War
+Cost  : 30 Mana
+Type  : Enchantment
+Usage : cast power of war
+Requirements : 40 Int, 15 Drazk, 15 Spell Casting
+
+The warlocks are first and foremost mages of War.  We derive much of our
+power from the death and pathos of War.  When in the midst of battle, our
+powers are at their pinnacle.  While under the influence of this spell, we
+may channel the power of war into our own magical might!
+
+The number of creatures fighting in the same room as you provides a
+percentage bonus to the damage dealt with Warlock spells.
+*/
+
 #ALIAS {pow}
 {
 	cast power of war
+}
+{5}
+
+
+#NOP  ######################################;
+#NOP  #######    Pyro Shield     ###########;
+#NOP  ######################################;
+/*
+Spell : Pyro Shield
+Cost  : 40 Mana
+Type  : Enchantment
+Usage : cast pyro shield [ target ]
+Requirements : 40 Int, 10 Fireball, 15 Spell Casting,15 Drazk
+
+We thrive on fire and chaos.  While legends of ancient Warlocks casting great
+spells of defense have not been verified, we Warlocks do have one power of
+shielding. When cast upon one's allies, all those attacking them with bare
+hands, or weapons requiring close combat scorch themselves upon the corona of
+flame surrounding them.
+*/
+
+#ALIAS {py}
+{
+	cast pyro shield %1
+}
+{5}
+
+
+#NOP  ######################################;
+#NOP  #######    Pyro Strike     ###########;
+#NOP  ######################################;
+/*
+Spell : Pyro Strike
+Cost  : 20 Mana
+Type  : Enchantment
+Usage : cast pyro strike [ target ]
+Requirements : 50 Int, 15 Pyro Shield, 15 Spell Casting,15 Drazk
+
+This rare spell was designed for the time when a Warlock battles beside a
+warrior.  The target must be a Master of Arms, usually either a Religious
+Warrior, or any form of pure fighter.  The spell enhances the Pyro Shield
+which you have hopefully already enchanted them with so that the flames
+surround their weapon as well as themselves.  Thus, their every strike is
+accompanied by very painful cauterization.
+*/
+
+#ALIAS {pys}
+{
+	cast pyro strike %1
+}
+{5}
+
+#NOP  ######################################;
+#NOP  #######       Ignite       ###########;
+#NOP  ######################################;
+/*
+Spell : Ignite
+Cost  : 20 Mana
+Type  : Enchantment
+Usage : cast ignite [ target ]
+Requirements : 30 Int, 5 Spell Casting, 5 Drazk
+
+Fire is an all consuming hunger.  As the fire is fed, it lights our way.  If
+something offends thee, BURN IT UP!
+*/
+
+#ALIAS {ig}
+{
+	cast ignite %1
 }
 {5}
 
