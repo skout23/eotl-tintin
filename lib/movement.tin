@@ -18,6 +18,11 @@
 #PATHDIR          {u}  {d}  {16}
 #PATHDIR          {w}  {e}  {8}
 
+#alias {rm}
+{
+	#MAP read $dir/maps/eotl.map
+}
+
 #ALIAS {bmu}
 {
 	beam me up
