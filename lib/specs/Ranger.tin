@@ -1,0 +1,6 @@
+#class RangerSpec kill
+#class RangerSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class RangerSpec close

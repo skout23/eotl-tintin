@@ -1,0 +1,6 @@
+#class RunesmithSpec kill
+#class RunesmithSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class RunesmithSpec close

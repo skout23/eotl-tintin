@@ -1,0 +1,6 @@
+#class DustmenGuild kill
+#class DustmenGuild open
+
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
+#class DustmenGuild close

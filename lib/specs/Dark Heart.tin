@@ -1,0 +1,6 @@
+#class DarkHeartSpec kill
+#class DarkHeartSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class DarkHeartSpec close

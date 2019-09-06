@@ -1,0 +1,6 @@
+#class PacifistGuild kill
+#class PacifistGuild open
+
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
+#class PacifistGuild close

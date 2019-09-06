@@ -1,0 +1,6 @@
+#class PaladinSpec kill
+#class PaladinSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class PaladinSpec close

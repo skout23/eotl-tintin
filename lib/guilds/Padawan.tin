@@ -1,0 +1,6 @@
+#class PadawanGuild kill
+#class PadawanGuild open
+
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
+#class PadawanGuild close

@@ -1,0 +1,6 @@
+#class MageslayerGuild kill
+#class MageslayerGuild open
+
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
+#class MageslayerGuild close

@@ -1,0 +1,6 @@
+#class JediSpec kill
+#class JediSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class JediSpec close

@@ -1,0 +1,6 @@
+#class FallenSpec kill
+#class FallenSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class FallenSpec close

@@ -1,0 +1,6 @@
+#class CrusaderGuild kill
+#class CrusaderGuild open
+
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
+#class CrusaderGuild close

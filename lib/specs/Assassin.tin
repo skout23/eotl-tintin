@@ -1,0 +1,6 @@
+#class AssassinSpec kill
+#class AssassinSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class AssassinSpec close

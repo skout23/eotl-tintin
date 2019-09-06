@@ -1,0 +1,6 @@
+#class ClericSpec kill
+#class ClericSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class ClericSpec close

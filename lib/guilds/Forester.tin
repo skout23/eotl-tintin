@@ -1,0 +1,6 @@
+#class ForesterGuild kill
+#class ForesterGuild open
+
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
+#class ForesterGuild close

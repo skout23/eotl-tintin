@@ -1,0 +1,6 @@
+#class CapacitorGuild kill
+#class CapacitorGuild open
+
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
+#class CapacitorGuild close

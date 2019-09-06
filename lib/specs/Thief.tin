@@ -1,0 +1,6 @@
+#class ThiefSpec kill
+#class ThiefSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class ThiefSpec close

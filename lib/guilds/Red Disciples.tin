@@ -1,0 +1,6 @@
+#class RedsGuild kill
+#class RedsGuild open
+
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
+#class RedsGuild close

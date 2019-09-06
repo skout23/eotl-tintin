@@ -1,0 +1,6 @@
+#class EtcGuild kill
+#class EtcGuild open
+
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
+#class EtcGuild close

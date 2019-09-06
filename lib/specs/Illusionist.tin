@@ -1,0 +1,6 @@
+#class IllusionistSpec kill
+#class IllusionistSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class IllusionistSpec close

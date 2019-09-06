@@ -1,0 +1,6 @@
+#class SithSpec kill
+#class SithSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class SithSpec close

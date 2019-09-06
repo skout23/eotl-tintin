@@ -1,0 +1,6 @@
+#class DruidSpec kill
+#class DruidSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....  YEAH RIGHT!!!!};
+
+#class DruidSpec close

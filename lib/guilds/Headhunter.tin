@@ -1,0 +1,6 @@
+#class HeadhunterGuild kill
+#class HeadhunterGuild open
+
+#SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
+#class HeadhunterGuild close
