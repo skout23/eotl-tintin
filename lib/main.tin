@@ -4,5 +4,6 @@
 #READ {$dir/lib/guilds.tin}
 #READ {$dir/lib/common.tin}
 #READ {$dir/lib/movement.tin}
+#READ {$dir/lib/communication.tin}
 
 #class main close
