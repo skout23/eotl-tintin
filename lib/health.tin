@@ -37,6 +37,20 @@
 }
 {5}
 
+#ALIAS {djar}
+{
+	get jar from $health_container;
+	drink jar
+}
+{5}
+
+#ALIAS {dl}
+{
+	get elixir from $health_container;
+	#3 drink elixir
+}
+{5}
+
 
 #NOP  ######################################;
 #NOP  ######    Purple Chalice    ##########;
