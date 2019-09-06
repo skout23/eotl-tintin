@@ -3,6 +3,142 @@
 
 #SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
 
+/*
+- Spec Skills -
+
+-- melee combat --
+vampiric touch:		reach out and touch someone... and take thier energy
+fester:				reach out and touch someone... and make em feel sicker
+rebirth:			reach out and touch someone... and make them a zombie NOW!
+
+-- zombies --
+reanimate:			turn a single corpse into a zombie
+awakening:			turn all the corpses in the room and any room you enter into zombies
+order risen:		tell all those zombies what to do 
+empower undead:		make all those zombies a bit stronger
+dark appetite:		feed those zombies on the flesh of your enemies
+
+-- doing stuff with dead things --
+bind spirit:		I forget, possibly make a ghost/spirit stay in a room?
+raise dead:			bring those dead players back... what are we Clerics? Come On!
+soul in a jar:		I forget, possibly trap that soul in a jar?
+release soul:		Let that soul go!
+undead curse:		Cause something to become a zombie sometime in the future
+
+-- creepy shite --
+vivisect:			Lets go to school to learn you some zombie-ing
+drain corpse:		Lets feed our desires from the flesh of the recent departed
+creeping death:		Lets make everyone feel a little bit worse
+dead of night:		MAUAHAAHAHAHA!
+
+-- crazy shite --
+cheat death:		What!!!? You want to live forever?
+dark contract:		Ever wish you could dominate the dead?  Just sign right here!
+
+- Proficiencies - 
+hands:           
+staff
+knife       
+wand
+light flail       
+
+*/
+
+#NOP  ######################################;
+#NOP  #########    Targetting    ###########;
+#NOP  #####  Enherited from Guild   ########;
+#NOP  ######################################;
+
+#NOP #VAR current_target monster;
+
+#NOP  ---========== Melee ===============---;
+
+#NOP  ######################################;
+#NOP  #######   Vampiric Touch     #########;
+#NOP  ######################################;
+/*
+Name  : Vampiric Touch
+Cost  : 40 Mana
+Type  : Combat
+Usage : cast vampiric touch [ target ]
+Requirements : 70 Int, 20 Drain Corpse, 20 Spell Casting, 20 Darktongue
+
+An old spell handed down generation to generation.  The Vampiric Touch was a
+spell exclusive to a group of Warlocks who split in a great schism to join
+with the Necromancers and take their power with them.  Vampiric Touch allows
+you to grasp your opponent and drain their life's blood through their eyes
+and into yourself.
+*/
+
+#ALIAS {vt}
+{
+	cast vampiric touch $current_target
+}
+{5}
+
+#ALIAS {vm}
+{
+	cast vampiric touch
+}
+{5}
+
+#NOP  ######################################;
+#NOP  ########       Fester       ##########;
+#NOP  ######################################;
+/*
+info fester
+Name  : Fester
+Cost  : 40 Mana
+Type  : Combat
+Usage : cast fester [ target ]
+Requirements : 80 Int, 20 Spell Casting, 15 Darktongue
+
+One of the more gruesome of the Necromantic powers.  It displays the
+Necromancers knowledge of Death and his ways like few other spells.  Once
+cast, the target of this spell becomes more vulnerable to the touch of Death.
+His wounds blister and puss flows from his open sores aggravating the damage
+already taken.
+*/
+
+#ALIAS {fes}
+{
+	cast fester
+}
+{5}
+
+#ALIAS {fest}
+{
+	cast fester $current_target
+}
+{5}
+
+#NOP  ######################################;
+#NOP  ########       Rebirth      ##########;
+#NOP  ######################################;
+/*
+Name  : Rebirth
+Cost  : 200 Mana
+Type  : Combat
+Usage : cast rebirth [ target ]
+Requirements : 100 Int, 25 Release Soul, 30 Spell Casting, 20 Darktongue
+
+Mastery of the undead requires many test subjects.  Sometimes those test
+subjects are a bit difficult to convince into assisting you with your
+research.  This spell brings about a sudden case of Death within a potential
+test subject, then creates a suitable ( undead ) work environment.  But be
+wary, only those significantly weaker than you can be so coerced into
+participating.
+*/
+
+#ALIAS {reb}
+{
+	cast rebirth $current_target
+}
+
+
+#NOP  ---========== Zombies ===============---;
+
+
 #ALIAS {rean}
 {
 	cast reanimate body
@@ -15,17 +151,9 @@
 }
 {5}
 
-#ALIAS {vm}
-{
-	cast vampiric touch
-}
-{5}
 
-#ALIAS {fes}
-{
-	cast fester
-}
-{5}
+
+
 
 #ALIAS {vc}
 {
@@ -39,11 +167,7 @@
 }
 {5}
 
-#ALIAS {cv}
-{
-	cast vampiric touch
-}
-{5}
+
 
 #ALIAS {ok}
 {
