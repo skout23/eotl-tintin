@@ -155,4 +155,11 @@
 }
 {5}
 
+#ALIAS {pp}
+{
+	pc;
+	get 5000 coins from pack
+}
+{5}
+
 #class CommonClass close

@@ -1,6 +1,15 @@
 #class HealthClass kill
 #class HealthClass open
 
+#VAR health_container pack;
+#VAR chalice_val 50;
+
+#ALIAS {hset}
+{
+	#variable health_container %0
+}
+{5}
+
 #ALIAS {bdo}
 {
 	buy double orange;
@@ -14,6 +23,71 @@
 	blend jar with vodka
 }
 {5}
+
+#ALIAS {dw}
+{
+	drink water
+}
+{5}
+
+#ALIAS {tq}
+{
+	get tequila from $health_container;
+	drink tequila
+}
+{5}
+
+
+#NOP  ######################################;
+#NOP  ######    Purple Chalice    ##########;
+#NOP  ######################################;
+
+#ALIAS {cset}
+{
+	#variable chalice_val %0
+}
+{5}
+
+#ALIAS {dh}
+{
+	drain $chalice_val hp
+}
+{5}
+
+#ALIAS {dm}
+{
+	drain $chalice_val mana
+}
+{5}
+
+#ALIAS {df}
+{
+	drain $chalice_val ftg
+}
+{5}
+
+
+#NOP  ######################################;
+#NOP  ######    Jug of Healing    ##########;
+#NOP  ######################################;
+
+#ALIAS {dj}
+{
+	drink jug
+}
+{5}
+
+#NOP  ######################################;
+#NOP  ######      Cream Pies      ##########;
+#NOP  ######################################;
+
+#ALIAS {ep}
+{
+	get pie from $health_container;
+	eat pie
+}
+{5}
+
 
 
 #class HealthClass close

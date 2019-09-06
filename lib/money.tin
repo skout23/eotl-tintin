@@ -1,0 +1,11 @@
+#class MoneyClass kill
+#class MoneyClass open
+
+#VAR money_container pack;
+
+#ALIAS {mset}
+{
+    #VAR money_container %0
+}
+
+#class MoneyClass close
