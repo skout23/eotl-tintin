@@ -1,7 +1,30 @@
 #class SpellcasterGuild kill
 #class SpellcasterGuild open
 
+/*
+Common Skills:
+evade
+follow
+flee
+dodge
+
+Skills:
+spell casting : needed to cast and might effect how well something is cast
+rift: open a portal to some other player
+channel: convert HP -> MP (shrug)
+alter location: change your location to some place "nicer"
+concentration: passive lets you still cast after taking damage
+familiar: find your best buddy
+
+Proficiencies:
+hands
+staff
+knife
+wand
+*/
+
 #SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
+
 
 #VAR current_target monster;
 
@@ -10,11 +33,67 @@
     #VAR current_target %1
 }
 
+#NOP  ######################################;
+#NOP  #########  Alter Location  ###########;
+#NOP  ######################################;
+/*
+Spell : Alter Location
+Cost  : 50 Mana
+Type  : Movement
+Usage : cast alter location
+        nice places
+        select nice place #
+Requirements : 50 Int, 15 Spell Casting, 15 Silvari, 7 Alter Location
+
+The basic transportation spell.  If you find a "nice place" you would like to
+return to, you may cast the spell and return there.  Type 'nice places' to
+see what you have set. And 'select nice place #' to select one of your other
+locations.
+*/
+
+#ALIAS {al}
+{
+	cast alter location
+}
+{5}
+
+#ALIAS {sal}
+{
+	select nice place %1
+}
+{5}
+
+#NOP  ######################################;
+#NOP  ######   Magic Missile    ############;
+#NOP  ### Guild Public Warlock Skill    ####;
+#NOP  ######################################;
+
 #ALIAS {cm}
 {
 	cast magic missile $current_target
 }
 {5}
+
+#NOP  ######################################;
+#NOP  ######   Find Familiar    ############;
+#NOP  ######################################;
+/*
+Name  : Familiar
+Cost  : 200 Mana
+Type  : Summoning
+Usage : cast familiar
+Requirements : 60 Int, 15 Spell Casting, 10 Darktongue
+
+The greatest of Spellcasters usually need assistance to complete their tasks.
+Some of the oldest allies of the Spellcasters are the imps, the small
+creatures who inhabit the darker realms.  Often a Mage will summon one of
+these to aid him in her dealings.  The relationship between a Magus and his
+familiar is a strange one indeed.  They share a telepathic link through which
+the caster can see everything the familiar sees and can summon it from afar. 
+Your familiar's presence gifts you with knowledge through your symbiotic
+mental link.  Some mages give mana to their familiar to store for them.  You
+can type "commands" to find out what you can do with your familiar.
+*/
 
 #ALIAS {fam}
 {
@@ -28,16 +107,51 @@
 }
 {5}
 
-#ALIAS {hh}
+#NOP  ######################################;
+#NOP  ######   Channel (don't use it!)  ####;
+#NOP  ######################################;
+/*
+info channel
+Spell : Channel
+Cost  : No Mana, Variable Hit Points and Fatigue
+Type  : Healing
+Usage : cast channel [ amount ]
+Requirements : 15 Int
+
+Allows the caster to transform the very life energy he is made of into
+magical energy.
+*/
+
+#NOP  ######################################;
+#NOP  ############   Rift   ################;
+#NOP  ######################################;
+/*
+Spell : Rift
+Cost  : 150 Mana plus 10 mana per skill level
+Type  : Movement
+Usage : cast rift to <player>
+Requirements : 150 in Intelligence
+                25 in Spell Casting
+                20 in Alter Location
+                20 in Silvari
+                 5 in Rift
+Rift is a powerful spell that can help locate a lost party member or make it
+easier to advance the Spell caster's minions and guardians to already charted
+areas.  As the Spell Caster progresses in level the portals will become more
+stable and last longer before collapsing in on itself.  Please note that
+these rifts can be traversed either way and be used by almost anyone. 
+Travelers that are not casters have a chance of ending up in a random
+location when they enter the rift.
+*/
+
+#ALIAS {crt}
 {
-	cast alter location
+	cast rift to 
 }
 {5}
 
-#ALIAS {shh}
-{
-	select nice place %1
-}
-{5}
+#NOP  ######################################;
+#NOP  ######################################;
+#NOP  ######################################;
 
 #class SpellcasterGuild close

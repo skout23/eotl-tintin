@@ -1,0 +1,19 @@
+#class HealthClass kill
+#class HealthClass open
+
+#ALIAS {bdo}
+{
+	buy double orange;
+	blend jar with vodka
+}
+{5}
+
+#ALIAS {bmv}
+{
+	buy mix;
+	blend jar with vodka
+}
+{5}
+
+
+#class HealthClass close
