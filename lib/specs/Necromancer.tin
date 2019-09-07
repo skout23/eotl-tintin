@@ -46,7 +46,7 @@ light flail
 
 #NOP  ######################################;
 #NOP  #########    Targetting    ###########;
-#NOP  #####  Enherited from Guild   ########;
+#NOP  #####  Enherited from Combat  ########;
 #NOP  ######################################;
 
 #NOP #VAR current_target monster;

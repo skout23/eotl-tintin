@@ -3,4 +3,205 @@
 
 #SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
 
+/*
+- Spec Skills -
+
+-- melee combat --
+gore:                   kill em'all let $DIETY sort them out
+mighty swing:           kill that 1 fuker right there!
+whirl:                  kill em'all for a long time
+
+-- not sure really --
+berserkin:              passive skill (ha!)
+rampage:                go on a bender?
+juggernaut:             be badass?
+
+-- no idea --
+trash:                  make the room nicer to get busy in
+
+-- various shite -- 
+belch:                  clear you head a bit and make room for more booze ... or foot I guess!
+bellow:                 let everyone else get in on the fun!
+pack:                   put just one more sliver of booze in your bag
+
+- Proficiencies - 
+hands
+light flail
+light sword
+heavy flail
+heavy sword
+light axe
+light club
+heavy axe
+heavy club
+
+*/
+
+#NOP  ######################################;
+#NOP  #########    Targetting    ###########;
+#NOP  #####  Enherited from Combat  ########;
+#NOP  ######################################;
+
+#NOP #VAR current_target monster;
+
+#NOP  ---========== Melee ===============---;
+
+
+#NOP  ######################################;
+#NOP  #######         GORE         #########;
+#NOP  ######################################;
+
+#ALIAS {gg}
+{
+    gore
+}
+
+#NOP  ######################################;
+#NOP  ########    Mighty Swing    ##########;
+#NOP  ######################################;
+
+/*
+Skill : Mighty Swing
+Cost  : 30 fatigue points
+Usage : mswing [target]
+
+     This skill allows the trained user to put more effort into a single
+swing of his, her,or its weapon.  The swing can be used only during actual
+combat, and will do increased damage at the loss of speed.
+*.
+
+#ALIAS {ms}
+{
+	mswing $current_target
+}
+{5}
+
+#NOP  ######################################;
+#NOP  #########       Whirl      ###########;
+#NOP  ######################################;
+/*
+Skill :  Whirl
+Cost  :  All Fatigue
+Usage : Whirl
+Requirements : 40 fatigue minimum
+               35 Constitution
+
+This skill allows a crazed slayer to begin whirling about in a mad swath of
+destruction.  You must have a two handed weapon to generate the proper force,
+and you will continue to spin about until you run out of fatigue.  It's
+generally not nice to do this near people you don't want to carve up, because
+it's rather indiscriminate.
+*/
+
+#ALIAS {wh}
+{
+    Whirl
+}
+
+#NOP  ######################################;
+#NOP  #########      Rampage     ###########;
+#NOP  ######################################;
+/*
+Skill : Rampage
+Cost  : 20 Drinkin + 1 per level of Rampage (max of 50)
+Usage : begin rampage
+Requirements : 120 Constitution
+               100 Strength
+               100 Drinkin
+                50 Berserkin
+                20 Belch
+
+There have been stories of drunken berserkers fighting non-stop throughout
+battles without showing any signs of slowing down.  With a little practice a
+hardened drunk can spend some drinking energy to give them an adrenalin rush.
+Isn?t the best part of being sober is trying to get drunk again?
+*/
+
+#ALIAS {ramp}
+{
+    begin rampage
+}
+
+#NOP  ######################################;
+#NOP  #########    Juggernaut    ###########;
+#NOP  ######################################;
+/*
+Skill  : Juggernaut
+Requirements to train and gain benefits:
+                200 in Constitution.
+                150 in Strength.
+                500 in Drinkin.
+                 20 in Endurance.
+
+It has been known that some berserker can fight for days on end and will only
+stop when they run out of victims or liquor.  During these escapades of
+drunken debauchery the berserker learns how to take a blow and keep on going.
+To be able to achieve this level of continual battle the berserker needs to
+know how to drink with the best and fight with the rest.
+*/
+
+#NOP  ######################################;
+#NOP  #########   Random Stuff   ###########;
+#NOP  ######################################;
+/*
+Skill :  Bellow
+Cost  :  15 Fatigue
+Usage :  bellow
+Requirements : 30 con.
+This skill allows a berserker to Bellow forth his her or its rage, being
+audible for a great distance.  Any Berserkers near the bellowing Berserker
+will become incensed, and attack anything the bellower is fighting.
+*/
+
+#ALIAS {belo}
+{
+    bellow
+}
+
+/*
+Skill : Belch
+Cost  : 15 Fatigue
+Usage : Belch
+Requirements : Must be at least partially drunk.
+This skill allows the inebriated berserker to clear out his her or its
+stomach of gasses which may or may not be falsely limiting his her or its
+ability to eat or drink more.  This has some... interesting social effects.
+*/
+
+#ALIAS {belc}
+{
+    Belch
+}
+
+/*
+Skill :  Trash
+Cost  :  50 Fatigue - 1 per level of Trash (Minimum of 10)
+Usage : trash room
+Requirements : Must be at least partially drunk.
+               Must be indoors or be underground.
+               Must be wielding something.
+
+This skill allows a drunken berserker to destroy his her or its surroundings.
+No self-respecting berserker should know what self-respect is, and no
+berserker at all should wanna fight in a clean room.
+*/
+
+#ALIAS {tra}
+{
+    trash room
+}
+
+/*
+Skill :  Pack
+Cost  :  Variable Fatigue
+Usage : pack [item] in [pack]
+Requirements : Str dependant on size of item.
+This skill allows you to shove that one extra thing into your already nearly
+full pack.  The weight of the item you want to shove in determines how much
+str you need and fat you spend doing so.  There must be at least some room
+left in the pack.
+*/
+
+
+
 #class BerserkerSpec close
