@@ -18,6 +18,19 @@ some of my tintin related stuff... YMMV
 ```
 tt++ setup.tin
 ```
+## Startup will check for Guild and Spec 
+- Wait a few seconds for your score to display
+- Guild and Spec to be loaded after they are parsed (will take about 3 seconds after login/reconnect)
+```
+> 
+After the Score... here we go
+Checking Guild ...
+Found: Fighter
+Loading ./lib/guilds/Fighter.tin ....
+Checking Spec ...
+Found: Berserker
+Loading ./lib/specs/Berserker.tin ....
+```
 
 ## the mapper
 ```

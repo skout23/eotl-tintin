@@ -10,9 +10,11 @@
     score;
     #DELAY {1} {
         #SHOWME {After the Score... here we go};
-        #SHOWME {Checking Guild $PLAYER[GUILD].....};
+        #SHOWME {Checking Guild ...};
+        #SHOWME {Found: $PLAYER[GUILD]};
         #READ {$dir/lib/guilds/$PLAYER[GUILD].tin};
-        #SHOWME {Checking Spec $PLAYER[SPEC].....};
+        #SHOWME {Checking Spec ...};
+        #SHOWME {Found: $PLAYER[SPEC]};
         #READ {$dir/lib/specs/$PLAYER[SPEC].tin};
     };
 };
