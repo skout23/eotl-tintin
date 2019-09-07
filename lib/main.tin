@@ -7,6 +7,7 @@
 #READ {$dir/lib/money.tin}
 #READ {$dir/lib/movement.tin}
 #READ {$dir/lib/communication.tin}
+#READ {$dir/lib/relationships.tin}
 #READ {$dir/lib/health.tin}
 #READ {$dir/lib/private/private.tin}
 
