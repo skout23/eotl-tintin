@@ -1,0 +1,15 @@
+#class CombatClass kill
+#class CombatClass open
+
+#NOP  ######################################;
+#NOP  #########    Targetting    ###########;
+#NOP  ######################################;
+
+#VAR current_target monster;
+
+#ALIAS {tt} 
+{
+    #VAR current_target %1
+}
+
+#class CombatClass close
