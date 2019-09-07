@@ -1,0 +1,6 @@
+#class BerserkerSpec kill
+#class BerserkerSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class BerserkerSpec close

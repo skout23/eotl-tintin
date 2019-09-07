@@ -1,0 +1,6 @@
+#class SwordsmanSpec kill
+#class SwordsmanSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class SwordsmanSpec close

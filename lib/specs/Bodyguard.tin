@@ -1,0 +1,6 @@
+#class BodyguardSpec kill
+#class BodyguardSpec open
+
+#SHOWME {Loading $dir/lib/specs/$PLAYER[SPEC].tin ....};
+
+#class BodyguardSpec close
