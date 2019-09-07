@@ -1,5 +1,6 @@
 .*-version
 log/*
+config/private*
 lib/private/*
 
 # General
