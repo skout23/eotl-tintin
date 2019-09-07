@@ -37,19 +37,23 @@ heavy club
 
 */
 
-#NOP  ######################################;
-#NOP  #########    Targetting    ###########;
-#NOP  #####  Enherited from Combat  ########;
-#NOP  ######################################;
-
-#NOP #VAR current_target monster;
-
 #NOP  ---========== Melee ===============---;
-
 
 #NOP  ######################################;
 #NOP  #######         GORE         #########;
 #NOP  ######################################;
+/*
+Skill :  Gore
+Cost  :  20 Fatigue + 5 per legal target
+Usage : gore
+Requirements : 45 str.
+Gore lets you really dish some pain out into the world.  By using this skill,
+you attack every monster in the room with you.  At higher levels of the
+skill, there is a chance based on how many monsters you're fighting that
+they'll be stunned and basically scared like pansies and thus be delayed. 
+This chance will always be greater when there are more monsters in the room
+(and thus you show yourself to be really, truely, creepily psychotic.)
+*/
 
 #ALIAS {gg}
 {
@@ -59,7 +63,6 @@ heavy club
 #NOP  ######################################;
 #NOP  ########    Mighty Swing    ##########;
 #NOP  ######################################;
-
 /*
 Skill : Mighty Swing
 Cost  : 30 fatigue points
@@ -68,7 +71,7 @@ Usage : mswing [target]
      This skill allows the trained user to put more effort into a single
 swing of his, her,or its weapon.  The swing can be used only during actual
 combat, and will do increased damage at the loss of speed.
-*.
+*/
 
 #ALIAS {ms}
 {
