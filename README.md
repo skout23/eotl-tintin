@@ -32,6 +32,14 @@ Found: Berserker
 Loading ./lib/specs/Berserker.tin ....
 ```
 
+## set your default target 
+- default is `monster` if you want something else
+```
+tt human
+tt dragon
+etc etc
+```
+
 ## private scripts
 - put any scripts you want kept private in `lib/private/private.tin`
 - or anywhere you like.
