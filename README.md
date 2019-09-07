@@ -57,7 +57,7 @@ etc etc
 
 - Load the map:
 ```
-mr 
+rm
 ^^ actually just runs the following:
 #map read $dir/maps/eotl.map
 
