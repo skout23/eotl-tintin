@@ -3,4 +3,53 @@
 
 #SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
 
+/*
+- Guild Skills -
+-- melee combat --
+bash:                   Ever want to just bash someone in the face... now you can!
+
+-- passive skills --
+shield:                 Work that shield for all it's worth
+endurance:              Don't wear your self out as much... also helps handle your drinkin
+
+- Proficiencies - 
+bow:
+hands:
+heavy axe:
+heavy club:
+heavy flail:
+heavy polearm:
+heavy sword:
+javelin:
+knife:
+light axe:
+light club:
+light flail:
+light polearm:
+light sword:
+pistol:
+rifle:
+staff:
+*/
+
+/*
+Skill   : Bash
+Usage   : bash [target]  (Not specifiying a target will automatically        
+target your current target if you are in combat.
+Cost    : 30 Fatigue
+Requires: 25 in both Str and Dex.
+  Used to initiate or during combat this skill will cause you to ram your
+target in an attempt to throw it off balance.  Success depends on your
+strength, the targets strength, and your skill level.  Wearing heavy armor
+and using a shield will also improve your chances of success, as well as
+increase the effects of a successful attack.  Failure will generally result
+in your being over-extended, off balance, and open to easy attack.
+*/
+
+#ALIAS {bm}
+{
+    bash $current_target
+}
+
+
 #class FighterGuild close
