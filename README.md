@@ -32,7 +32,10 @@ tt++ setup.tin
 
 - Load the map:
 ```
+mr 
+^^ actually just runs the following:
 #map read $dir/maps/eotl.map
+
 ```
 
 - Start the map in the correct room e.g. the "Lounge":
