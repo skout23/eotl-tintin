@@ -10,6 +10,7 @@
 #READ {$dir/lib/relationships.tin}
 #READ {$dir/lib/health.tin}
 #READ {$dir/lib/private/private.tin}
+#READ {$dir/config/private_vars.tin}
 
 
 #class main close
