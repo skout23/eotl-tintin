@@ -7,56 +7,56 @@
 
 #ALIAS {addchar}
 {
-	#class {private_vars} open
-	#variable charlist $charlist|%0
-	#class {private_vars} close
-	#class var write $dir/config/private_vars.tin
+	#class {private_vars} open;
+	#variable charlist $charlist|%0;
+	#class {private_vars} close;
+	#class var write $dir/config/private_vars.tin;
 }
 {5}
 
 #ALIAS {addfoe}
 {
-	#class {private_vars} open
-	#variable foelist $foelist|%0
-	#class {private_vars} close
-	#class var write $dir/config/private_vars.tin
+	#class {private_vars} open;
+	#variable foelist $foelist|%0;
+	#class {private_vars} close;
+	#class var write $dir/config/private_vars.tin;
 }
 {5}
 
 #ALIAS {addfriend}
 {
-	#class {private_vars} open
-	#variable friendlist $friendlist|%0
-	#class {private_vars} close
-	#class var write $dir/config/private_vars.tin
+	#class {private_vars} open;
+	#variable friendlist $friendlist|%0;
+	#class {private_vars} close;
+	#class var write $dir/config/private_vars.tin;
 }
 {5}
 
 
 #ALIAS {delchar}
 {
-	#class {private_vars} open
-	#replace charlist {|%0} {}
-	#class {private_vars} close
-	#class var write $dir/config/private_vars.tin
+	#class {private_vars} open;
+	#replace charlist {|%0} {};
+	#class {private_vars} close;
+	#class var write $dir/config/private_vars.tin;
 }
 {5}
 
 #ALIAS {delfoe}
 {
-	#class {private_vars} open
-	#replace foelist {|%0} {}
-	#class {private_vars} close
-	#class var write $dir/config/private_vars.tin
+	#class {private_vars} open;
+	#replace foelist {|%0} {};
+	#class {private_vars} close;
+	#class var write $dir/config/private_vars.tin;
 }
 {5}
 
 #ALIAS {delfriend}
 {
-	#class {private_vars} open
-	#replace friendlist {|%0} {}
-	#class {private_vars} close
-	#class var write $dir/config/private_vars.tin
+	#class {private_vars} open;
+	#replace friendlist {|%0} {};
+	#class {private_vars} close;
+	#class var write $dir/config/private_vars.tin;
 }
 {5}
 
