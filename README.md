@@ -32,6 +32,10 @@ Found: Berserker
 Loading ./lib/specs/Berserker.tin ....
 ```
 
+## private scripts
+- put any scripts you want kept private in `lib/private/private.tin`
+- or anywhere you like.
+
 ## the mapper
 ```
 #help map
@@ -136,3 +140,5 @@ OR
 #alias
 #grep run
 ```
+
+
