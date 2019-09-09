@@ -254,6 +254,12 @@
 }
 {5}
 
+#ALIAS {capg}
+{
+	#map run {Outside a Subterranean Electrical Substation} 
+}
+{5]}
+
 #ALIAS {caste}
 {
 	#map run {Caster Elevator}
