@@ -28,52 +28,24 @@ overcharge: 2000 exp, 3 coins
 hands: 1500 exp, 3 coins               light club: 1500 exp, 3 coins
 light sword: 1500 exp, 3 coins         light flail: 1500 exp, 3 coins
 knife: 18570 exp, 25 coins             light axe: 1500 exp, 3 coins
+*/
 
 
+#NOP #######################################################;
+#NOP ###########  BASIC and PASSIVE SKILLS #################;
+#NOP #######################################################;
+/*
+> info electrical aptitude
+Skill    :  Electrical Aptitude
+Type     :  Knowledge
+Usage    :  Passive
+Cost     :  Passive
+Requires :  Nothing
 
-> info surge
-Skill    :  Surge
-Type     :  Charge Generator
-Usage    :  Surge
-Cost     :  25 Fatigue
-Requires :  50 Intelligence
-
-Surge allows a Capacitor to safely utilize their highly sophisticated
-Horakina generation unit, which is capable of creating a surge of charge with
-little to no adverse side effects.  Unfortunately the Horakina does require a
-bit of time before it can be used again, but the gains are truly undeniable.
-
-> info aegis of electricity
-Skill    :  Aegis of Electricity
-Type     :  Conjuration
-Usage    :  amass aegis
-Cost     :  150 Charge and 500 Fatigue
-Requires :  175 Intelligence
-30 Electrical Aptitude
-30 Electromagnetic Shield
-
-Many have tried to subjugate lightning, but few have managed to do so.  The
-Aegis of Electricity is a technique in which lightning is sustained and
-forged into an ethereal shield.  Blocks with the Aegis have been known to
-result in lightning striking back toward that which struck it.  It may even
-award the wielder with a bit of charge as well.  Volatile as it is, its power
-is simply undeniable.
-
-> info bolster shield
-Skill    :  Bolster Shield
-Type     :  Defensive Charge Consumer
-Usage    :  Bolster Shield
-Cost     :  20 Charge
-Requires :  50 Intelligence
-            15 Electromagnetic Shield
-
-When things get particularly tricky, you may find your Electromagnetic Shield
-is simply not keeping you alive.  Bolstering your EMS provides you with
-additional defensive capabilities, including resistances to both energy
-damage as well as physical attacks.  The duration is short, and the cooldown
-is double the duration, making this a spell best used when tackling
-particularly dangerous foes.
-
+Electrical Aptitude increases your overall proficiency in dealing with
+electricity.  This does several things such as: lower skill failure, better
+output, a higher total charge capacity, and causes abilities to sometimes
+refund a portion of spent charge.
 
 > info delta protocol
 Skill    :  Delta Protocol
@@ -87,8 +59,32 @@ a potentially life saving capacitative shield around yourself in case of what
 would otherwise be almost certain death.  While the shield holds you will
 take no damage, allowing you a chance to save yourself before an untimely end
 becomes you.
+*/
 
+#NOP #######################################################;
+#NOP ###########   CHARGE RELATED SKILLS   #################;
+#NOP #######################################################;
+/*
+> info surge
+Skill    :  Surge
+Type     :  Charge Generator
+Usage    :  Surge
+Cost     :  25 Fatigue
+Requires :  50 Intelligence
 
+Surge allows a Capacitor to safely utilize their highly sophisticated
+Horakina generation unit, which is capable of creating a surge of charge with
+little to no adverse side effects.  Unfortunately the Horakina does require a
+bit of time before it can be used again, but the gains are truly undeniable.
+*/
+
+#ALIAS {sg}
+{
+	Surge
+}
+{5}
+
+/*
 > info discharge
 Skill    :  Discharge
 Type     :  Emergency Charge Dump
@@ -105,9 +101,74 @@ the procedure.
 Note: Discharging the minimum will attempt to dump only the charge which
 exceeds your maximum, while half and all will discharge half or all of your
 current charge.
+*/
+
+#ALIAS {dcm}
+{
+	Discharge min
+}
+{5}
+
+#ALIAS {dch}
+{
+	Discharge half
+}
+{5}
+
+#ALIAS {dca}
+{
+	Discharge all
+}
+{5}
+
+#NOP #######################################################;
+#NOP ###########        MELEE SKILLS       #################;
+#NOP #######################################################;
+
+/*
+> info energize weapon
+Skill    :  Energize Weapon
+Type     :  Weapon Enhancement
+Usage    :  Energize [ weapon ]
+Cost     :  60 Charge
+Requires :  50 Intelligence
+            15 Electrical Aptitude
+
+Although physical combat is a part of the Capacitor repertoire, it isn't
+exactly our strong suit.  However, a clever Capacitor can dump Charge into
+their weapon, causing it to sometimes deal electric damage instead of (and in
+addition to) its normal damage type.  Coating a weapon with a static charge
+is a good way to ensure you keep up with other heavy damage dealers.
+*/
+
+#ALIAS {ew}
+{
+  Energize
+}
+{5}
 
 
+/*
+> info overcharge
+Skill    :  Overcharge
+Type     :  Offensive Charge Generator
+Usage    :  Overcharge [ target ]
+Cost     :  40 Fatigue
+Requires :  50 Intelligence
 
+Charge is the core of what a Capacitor can do, and frankly sometimes doing
+things the safe way is pretty boring.  Overcharge allows you to gain charge
+by vibrating in a way that is directly counterindicated in your operations
+manual.  The byproduct of doing so will be an excess amount of heat, which
+you obviously must then dump on some unsuspecting jerk.
+*/
+#ALIAS {och}
+{
+	Overcharge $current_target
+}
+{5}
+
+/*
 > info disintegrate
 Skill    :  Disintegrate
 Type     :  Offensive Charge Consumer
@@ -120,40 +181,18 @@ Capacitor to dump it all into a single victim.  It has no cooldown, and is
 only limited by your ability to generate sufficient Charge.
 Note: This skill requires you to either have a free hand, or be wielding a
 metallic weapon.
+*/
+#ALIAS {dis}
+{
+	Disintegrate $current_target
+}
 
 
 
-> info electrical aptitude
-Skill    :  Electrical Aptitude
-Type     :  Knowledge
-Usage    :  Passive
-Cost     :  Passive
-Requires :  Nothing
-
-Electrical Aptitude increases your overall proficiency in dealing with
-electricity.  This does several things such as: lower skill failure, better
-output, a higher total charge capacity, and causes abilities to sometimes
-refund a portion of spent charge.
-
-
-
-
-> info electromagnetic pulse
-Skill    :  Electromagnetic Pulse
-Type     :  Offensive Charge Consumer
-Usage    :  Initiate Pulse
-Cost     :  All Charge, minimum 80
-Requires :  80 Intelligence
-            20 Disintegrate
-
-This is a slightly modified version of a traditional Electromagnetic Pulse,
-in that it deals direct damage to machinery and flesh alike.  Activating your
-pulse emitter will dump your entire Charge capacity, whatever it may be, into
-the surrounding area, disorienting and dealing damage to everyone not
-currently grouped with you.
-
-
-
+#NOP #######################################################;
+#NOP ###########      EM SHIELD RELATED      ###############;
+#NOP #######################################################;
+/*
 > info electromagnetic shield
 Skill    :  Electromagnetic Shield
 Type     :  Defensive Charge Generator
@@ -169,23 +208,60 @@ being provided to various types of energy and magic.  Additionally, attacks
 against you may occasionally triggering your shield, causing a slight
 electrical zap to the attacker, as well as providing you with a small amount
 of Charge.
+*/
+#ALIAS {shup}
+{
+	Deploy Shield
+}
+{5}
 
+#ALIAS {shdn}
+{
+	Withdraw Shield
+}
+{5}
 
-
-> info energize weapon
-Skill    :  Energize Weapon
-Type     :  Weapon Enhancement
-Usage    :  Energize [ weapon ]
-Cost     :  60 Charge
+/*
+> info bolster shield
+Skill    :  Bolster Shield
+Type     :  Defensive Charge Consumer
+Usage    :  Bolster Shield
+Cost     :  20 Charge
 Requires :  50 Intelligence
-            15 Electrical Aptitude
+            15 Electromagnetic Shield
 
-Although physical combat is a part of the Capacitor repertoire, it isn't
-exactly our strong suit.  However, a clever Capacitor can dump Charge into
-their weapon, causing it to sometimes deal electric damage instead of (and in
-addition to) its normal damage type.  Coating a weapon with a static charge
-is a good way to ensure you keep up with other heavy damage dealers.
+When things get particularly tricky, you may find your Electromagnetic Shield
+is simply not keeping you alive.  Bolstering your EMS provides you with
+additional defensive capabilities, including resistances to both energy
+damage as well as physical attacks.  The duration is short, and the cooldown
+is double the duration, making this a spell best used when tackling
+particularly dangerous foes.
+*/
+#ALIAS {bosh}
+{
+	Bolster Shield
+}
+{5}
 
+
+/*
+===============  80 INT
+
+> info electromagnetic pulse
+Skill    :  Electromagnetic Pulse
+Type     :  Offensive Charge Consumer
+Usage    :  Initiate Pulse
+Cost     :  All Charge, minimum 80
+Requires :  80 Intelligence
+            20 Disintegrate
+
+This is a slightly modified version of a traditional Electromagnetic Pulse,
+in that it deals direct damage to machinery and flesh alike.  Activating your
+pulse emitter will dump your entire Charge capacity, whatever it may be, into
+the surrounding area, disorienting and dealing damage to everyone not
+currently grouped with you.
+
+===============  80 WIL
 
 > info invigoration
 Skill    :  Invigoration
@@ -201,24 +277,24 @@ purposes... for once.  Invigorating yourself, or an ally, will deliver a
 harmless zap of electricity, granting an instant jolt of energy, as well as
 increase the amount of fatigue you gain over its duration.
 
+=============== 175 INT
 
+> info aegis of electricity
+Skill    :  Aegis of Electricity
+Type     :  Conjuration
+Usage    :  amass aegis
+Cost     :  150 Charge and 500 Fatigue
+Requires :  175 Intelligence
+30 Electrical Aptitude
+30 Electromagnetic Shield
 
-> info overcharge
-Skill    :  Overcharge
-Type     :  Offensive Charge Generator
-Usage    :  Overcharge [ target ]
-Cost     :  40 Fatigue
-Requires :  50 Intelligence
-
-Charge is the core of what a Capacitor can do, and frankly sometimes doing
-things the safe way is pretty boring.  Overcharge allows you to gain charge
-by vibrating in a way that is directly counterindicated in your operations
-manual.  The byproduct of doing so will be an excess amount of heat, which
-you obviously must then dump on some unsuspecting jerk.
-
-
+Many have tried to subjugate lightning, but few have managed to do so.  The
+Aegis of Electricity is a technique in which lightning is sustained and
+forged into an ethereal shield.  Blocks with the Aegis have been known to
+result in lightning striking back toward that which struck it.  It may even
+award the wielder with a bit of charge as well.  Volatile as it is, its power
+is simply undeniable.
 */
-
 
 
 #class CapacitorGuild close
