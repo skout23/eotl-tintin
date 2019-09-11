@@ -39,6 +39,11 @@ knife: 18570 exp, 25 coins             light axe: 1500 exp, 3 coins
 }
 {5}
 
+#ALIAS {cs}
+{
+    capstatus
+}
+
 #NOP #######################################################;
 #NOP ###########  BASIC and PASSIVE SKILLS #################;
 #NOP #######################################################;
@@ -126,6 +131,12 @@ current charge.
 #ALIAS {dca}
 {
 	Discharge all
+}
+{5}
+
+#ACTION {You're overloading!}
+{
+    dcm
 }
 {5}
 
