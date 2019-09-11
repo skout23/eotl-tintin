@@ -3,6 +3,8 @@
 
 #SHOWME {Loading $dir/lib/guilds/$PLAYER[GUILD].tin ....};
 
+#VAR cap_weapon katar;
+
 /*
  - Skills - 
 shield: 500 exp, 1 coins
@@ -30,6 +32,12 @@ light sword: 1500 exp, 3 coins         light flail: 1500 exp, 3 coins
 knife: 18570 exp, 25 coins             light axe: 1500 exp, 3 coins
 */
 
+
+#ALIAS {capweap} 
+{
+    #VAR cap_weapon %1
+}
+{5}
 
 #NOP #######################################################;
 #NOP ###########  BASIC and PASSIVE SKILLS #################;
@@ -141,12 +149,17 @@ addition to) its normal damage type.  Coating a weapon with a static charge
 is a good way to ensure you keep up with other heavy damage dealers.
 */
 
-#ALIAS {ew}
+#ALIAS {enw}
 {
-  Energize
+  Energize $cap_weapon
 }
 {5}
 
+#ACTION {$cap_weapon is no longer holding a charge}
+{
+    enw
+}
+{5}
 
 /*
 > info overcharge
